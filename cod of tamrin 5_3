@@ -1,0 +1,56 @@
+#include <stdio.h>
+
+int main() {
+    float zel1;
+    float zel2;
+    float zel3;
+    float anwser;
+    int voroodi=0;
+
+    while (voroodi <=4){
+        printf("\n1: Aria of a parallelogram | 2: Aria of a triangle | 3: Aria of a tarpezoid | 4: Aria of a circle | 5: out");
+        printf("\nadad mored nazareto vared konid: ");
+        scanf("%d",&voroodi);
+
+     if (voroodi==1)
+     {
+         printf("\nghede ra vared konid: ");
+         scanf("%f",&zel1);
+         printf("\nertefa ra vared konid: ");
+         scanf("%f",&zel2);
+         anwser=zel1*zel2;
+         printf("\njavab: %.2f",anwser);
+
+     }
+     else if(voroodi==2)
+     {
+         printf("\nghede ra vared konid: ");
+         scanf("%f",&zel1);
+         printf("\nertefa ra vared konid: ");
+         scanf("%f",&zel2);
+         anwser=(zel1*zel2)/2;
+         printf("\njavab: %.2f",anwser);
+     }
+     else if(voroodi==3)
+     {   printf("\nghede koochak ra vared konid: ");
+         scanf("%f",&zel3);
+         printf("\nghede bozorg ra vared konid: ");
+         scanf("%f",&zel1);
+         printf("\nertefa ra vared konid: ");
+         scanf("%f",&zel2);
+         anwser=((zel1+zel3)/2)*zel2;
+         printf("\njavab: %.2f",anwser);
+     }
+     else if(voroodi==4) {
+         printf("\nshoa ra vared konid: ");
+         scanf("%f", &zel1);
+         anwser = zel1 * zel1 * 3.14;
+         printf("\n%.2f", anwser);
+
+     }
+    }
+
+
+
+    return 0;
+}
